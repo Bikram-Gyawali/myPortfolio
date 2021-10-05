@@ -1,0 +1,8 @@
+.imgContact{
+    background-image: linear-gradient(rgba(112, 185, 214, 0.5), rgba(35, 37, 168, 0.699)), url("https://www.logicode.co.th/wp-content/uploads/2017/08/contact-banner-1.jpg");
+    height: 40%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
