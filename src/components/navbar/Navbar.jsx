@@ -33,7 +33,7 @@ function NavBar() {
         {/* <code className=" text-2xl  mx-auto my-auto font-italic  font-weight-bolder text-blue-500  " > {`{ Bikram Gyawali }`}</code> */}
         <div className="navright my-auto flex gap-10 text-2xl  ">
           <h1>
-          <button ref={contactme} onClick={() => scrollToContact("blogs")}>Blogs</button>
+          <button ref={contactme} onClick={() => scrollToContact("home")}>Blogs</button>
           </h1>
           <h1>
           <button ref={contactme} onClick={() => scrollToContact("skills")}>Skills</button>

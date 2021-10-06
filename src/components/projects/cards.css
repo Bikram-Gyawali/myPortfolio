@@ -1,0 +1,26 @@
+.titl {
+  width: 300px ;
+  max-height:200px;
+  word-wrap: break-word;
+  white-space: nowrap;
+  text-overflow: ellipsis ;
+  overflow: hidden;
+}
+
+.desc{
+  word-wrap: break-word;
+  white-space: nowrap;
+  text-overflow: ellipsis ;
+  overflow: hidden;  
+}
+
+.card{
+    min-height:400px !important;
+}
+
+.portalBody{
+  min-height: 500px;
+  margin-bottom: 50px;
+  overflow-y:scroll;
+  max-height: 650px;
+}

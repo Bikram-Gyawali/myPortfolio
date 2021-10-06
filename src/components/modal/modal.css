@@ -1,5 +1,5 @@
 .modalhead{
-  background-color:rgba(15, 3, 3, 0.13) ;
+  background-color:rgba(27, 27, 27, 0.041) ;
   z-index: 40;
   top:0;
   right:0;
@@ -8,8 +8,8 @@
 }
 
 .modalbody{
-  top: 15vh;
-  left:20vw
+  position: relative;
+  margin: 10px 100px;
 }
 
 .portalBody{
@@ -17,8 +17,6 @@
 }
 
 
-
 .leftBox{
   min-width:30%;
-  margin-right: 10px;
 }
