@@ -24,3 +24,12 @@
   overflow-y:scroll;
   max-height: 650px;
 }
+
+.pimgBox{
+  min-width: 450px;
+  max-width: 450px;
+  min-height: 300px;
+  max-height: 300px;
+  position: relative;
+  
+}

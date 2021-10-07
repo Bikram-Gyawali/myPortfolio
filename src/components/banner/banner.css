@@ -3,3 +3,8 @@
     height: 90vh;
 }
 
+.bannerImg{
+    position: relative;
+    height: 80vh;
+    top: 25vh;
+}
