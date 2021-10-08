@@ -1,5 +1,6 @@
 import React from "react";
 import AOS from "aos";
+import { skills } from "../../data/skills.json";
 function Skills() {
   AOS.init({
     // Global settings:
@@ -35,13 +36,30 @@ function Skills() {
       <section class="body-font">
         <div class="container px-5 py-24 mx-auto " data-aos="fade-up">
           <div class="text-center mb-20">
-            <h3 className=" text-blue-600 text-2xl mt-4 border-b-2   -mb-4 font-medium " >
+            <h3 className=" text-blue-600 text-2xl mt-4 border-b-2   -mb-4 font-medium ">
               My Skills
             </h3>
           </div>
 
-          <div id="skills"  class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 "  >
-            <div class="p-2 sm:w-1/2 w-full">
+          <div
+            id="skills"
+            class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 "
+          >
+            {skills.map((skill, index) => {
+              let ind = index + 1;
+              return (
+                <div
+                  class="p-2 sm:w-1/2 w-full"
+                  data-aos={`${ind % 2 === 0 ? "fade-left" : "fade-right"}`}
+                >
+                  <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                    <img src={`${skill.img}`} className="w-10 mr-4" alt="" />
+                    <span class="title-font font-medium">{skill.name}</span>
+                  </div>
+                </div>
+              );
+            })}
+            {/* <div class="p-2 sm:w-1/2 w-full">
               <div class="bg-gray-100 rounded flex p-4 h-full items-center" data-aos="fade-right"  >
                 <img
                   src="https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png"
@@ -75,7 +93,6 @@ function Skills() {
                 </div>
               </div>
             </div>
-
             <div class="p-2 sm:w-1/2 w-full">
               <div class="bg-gray-100 rounded flex p-4 h-full items-center" data-aos="fade-right">
                 <img
@@ -195,7 +212,7 @@ function Skills() {
                   </div>
                 </div>
               </div>
-            </div>
+          </div>*/}
           </div>
         </div>
       </section>

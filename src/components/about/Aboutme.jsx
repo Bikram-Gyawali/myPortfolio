@@ -13,27 +13,27 @@ function Aboutme() {
               About Me
             </h3>
           </div>
-      <div className="mt-4" data-aos="fade-up">
-        <div className={rowClass}>
+      <div className="mt-4" >
+        <div className={rowClass} data-aos="fade-up">
           <span className={leftClass}>Full name:</span>
           <span className={rightClass}>Bikram Gyawali</span>
         </div>
-        <div className={rowClass}>
+        <div className={rowClass} data-aos="fade-up">
           <span className={leftClass}>Email Address:</span>
           <span className={rightClass}>bikramgyawali57@gmail.com</span>
         </div>
-        <div className={rowClass}>
+        <div className={rowClass} data-aos="fade-up">
           <span className={leftClass}>P.Address:</span>
           <span className={rightClass}>Butwal,Rupandehi</span>
         </div>
-        <div className={rowClass}>
+        <div className={rowClass} data-aos="fade-up">
           <span className={leftClass}>Github:</span>
           <span className={rightClass}>
             <a href="https://github.com/Bikram-Gyawali">Bikram-Gyawali</a>
           </span>
         </div>
 
-        <div className={rowClass}>
+        <div className={rowClass} data-aos="fade-up">
           <span className={leftClass}>Bio</span>
           <span className={rightClass}>
             I am a freelancer,software developer with plenty of experience on

@@ -68,10 +68,11 @@ function Card() {
               dotListClass="custom-dot-list-style"
               itemClass="carousel-item-padding-20px ml-3"
               className="pb-4 w-full z-0"
+              data-aos="fade-left"
             >
               {datas.map((result, index) => {
                 return (
-                  <div className=" flex flex-col  border-r-4  border-blue-400 shadow-2xl w-90 pb-3 rounded-br-lg h-full">
+                  <div className=" flex flex-col  border-r-4  border-blue-400 shadow-2xl w-90 pb-3 rounded-br-lg h-full" >
                     <div className="leftBox h-60 w-full">
                       <img
                         // src={""+result.images[0]}

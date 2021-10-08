@@ -15,13 +15,13 @@ function PortalBody({ result, index }) {
   const handleSlide = (n) => {
     if (image + n >= result.images.length) {
       setImage(0);
-      console.log("if",image)
+      console.log("if", image);
     } else if (image + n < 0) {
-      setImage("else if",result.images.length - 1);
-      console.log(image)
+      setImage("else if", result.images.length - 1);
+      console.log(image);
     } else {
       setImage(image + n);
-      console.log("else",image)
+      console.log("else", image);
     }
   };
 
@@ -36,7 +36,7 @@ function PortalBody({ result, index }) {
 
   return (
     <div>
-      <div className="mx-auto portalBody flex flex-col  rounded-br-lg max-w-6xl rounded-tr-lg  mb-16 ">
+      <div className="mx-auto portalBody flex flex-col  rounded-br-lg max-w-6xl rounded-tr-lg  mb-16 " >
         <div className="leftBox p-1 mx-auto border-b flex flex-row ">
           <button
             onClick={() => {
@@ -79,8 +79,13 @@ function PortalBody({ result, index }) {
           </div>
           <div>
             <h4>Features:</h4>
-            {result.features.map((feature) => {
-              return <span className="text-gray-500  mb-1  ">{feature} ,</span>;
+            {result.features.map((feature, index) => {
+              return (
+                <span className="text-gray-500  mb-1  ">
+                  {feature}
+                  {result.features.length-1 !== index ? " , " : ",etc."}
+                </span>
+              );
             })}
           </div>
           <div className="flex flex-row justify-around mt-4 ml-4 relative">

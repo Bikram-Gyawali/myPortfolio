@@ -1,11 +1,33 @@
 {
   "skills": [
-    "Javascript",
-    "ReactJS",
-    "NodeJS",
-    "MongoDB",
-    "Git",
-    "ExpressJS",
-    "Python"
+    {
+      "name": "Javascript",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png"
+    },
+    {
+      "name": "ReactJs",
+      "img": "https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png"
+    },
+    {
+      "name": "NodeJS",
+      "img": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_f0b606abb6d19089febc9faeeba5bc05/nodejs-development-services.png"
+    },
+
+    {
+      "name": "MongoDB",
+      "img": "https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png"
+    },
+    {
+      "name": "Git",
+      "img": "https://e7.pngegg.com/pngimages/713/558/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png"
+    },
+    {
+      "name": "ExpressJS",
+      "img": "https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png"
+    },
+    {
+      "name": "Python",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png"
+    }
   ]
 }
