@@ -35,21 +35,21 @@ function Card() {
       slidesToSlide: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 2,
+      breakpoint: { max: 480, min: 0 },
+      items: 1,
     },
   };
 
   return (
     <div>
-      <section className="body-font w-full">
-        <div class=" px-1 py-24  " data-aos="fade-up">
+      <section className=" body-font  ">
+        <div class="container" data-aos="fade-up">
           <div class="text-center mb-20">
-            <h3 className=" text-blue-600 text-2xl mt-4 border-b-2   -mb-4 font-medium ">
+            <h3 className=" text-blue-600 text-2xl mt-4 border-b-2   -mb-10 font-medium " >
               My Projects
             </h3>
           </div>
-          <div className="slider-box  " id="projects">
+          <div className="slider-box"  id="projects">
             <Carousel
               swipeable={true}
               draggable={true}
@@ -66,14 +66,14 @@ function Card() {
               removeArrowOnDeviceType={["tablet", "mobile"]}
               // deviceType={this.props.deviceType}
               dotListClass="custom-dot-list-style"
-              itemClass="carousel-item-padding-20px ml-3"
+              itemClass="carousel-item-padding-20px ml-2"
               className="pb-4 w-full z-0"
               data-aos="fade-left"
             >
               {datas.map((result, index) => {
                 return (
-                  <div className=" flex flex-col  border-r-4  border-blue-400 shadow-2xl w-90 pb-3 rounded-br-lg h-full" >
-                    <div className="leftBox h-60 w-full">
+                  <div className="cards flex flex-col  border-r-4  border-blue-400 shadow-2xl w-full pb-3 rounded-br-lg h-full mx-auto" >
+                    <div className="leftBox h-44 w-full mx-auto">
                       <img
                         // src={""+result.images[0]}
                         src={`${result?.images[0]}`}
@@ -85,10 +85,10 @@ function Card() {
                       <h1 className="titl gray font-medium text-2xl  pb-3">
                         {result.title}
                       </h1>
-                      <small className="gray font-medium mb-2 text-wrap desc h-9 ">
+                      <small className="gray font-medium mb-2 text-wrap desc h-9 mx-2 ">
                         {result?.description}
                       </small>
-                      <div className="flex flex-row flex-wrap ,x-auto  w-70 mr-0.5">
+                      <div className="flex flex-row flex-wrap w-70 mr-0.5">
                         {result.tech.map((skill) => {
                           return (
                             <small className="p-1 bg-blue-100 text-blue-900 border-2  mb-1 ml-1 p-1 cursor-pointer rounded ">

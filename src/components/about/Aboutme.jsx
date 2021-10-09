@@ -5,7 +5,7 @@ function Aboutme() {
   const rowClass =
     "flex flex-col sm:flex-row justify-between items-center sm:items-start py-3 border-t border-gray-300 last:border-none";
   const leftClass = "w-full sm:w-1/3 font-medium text-center sm:text-left";
-  const rightClass = "flex-1 text-left sm:text-left";
+  const rightClass = "flex-1 text-left sm:text-left mx-3 ";
   return (
     <div className="w-full">
        <div class="text-center mb-20" >
@@ -24,7 +24,7 @@ function Aboutme() {
         </div>
         <div className={rowClass} data-aos="fade-up">
           <span className={leftClass}>P.Address:</span>
-          <span className={rightClass}>Butwal,Rupandehi</span>
+          <span className={rightClass}>Butwal,Rupandehi, Nepal</span>
         </div>
         <div className={rowClass} data-aos="fade-up">
           <span className={leftClass}>Github:</span>
@@ -37,9 +37,9 @@ function Aboutme() {
           <span className={leftClass}>Bio</span>
           <span className={rightClass}>
             I am a freelancer,software developer with plenty of experience on
-            technologies like Reactjs,React Native,Nodejs,Python,MongoDb,Github. Or
+            technologies like Reactjs,Nodejs,Python,MongoDb,Github. Or
             should I say that I Love Javascirpt. Do you know that I am a Student too ?
-            Studying CSIT in Madan Bhandari Memorial College,Batch 076
+            Studying CSIT in Madan Bhandari Memorial College,KTM,Batch 076
           </span>
         </div>
       </div>

@@ -4,7 +4,48 @@
 }
 
 .bannerImg{
-    position: relative;
-    height: 80vh;
-    top: 25vh;
+    position:relative;  
+    height:500px;
+    top:30vh;
+}
+
+.textBlock{
+    position:relative;
+    top:30vh;
+    font-size:50px;
+}
+
+
+
+
+
+@media only screen and ( max-width:740px){
+    /* .bannerImg{
+        height:400px;
+        top:40vh;
+
+    } */
+    .textBlock{
+        /* position:relative; */
+        /* display:block; */
+        /* top:30vh; */
+        font-size:23px
+    }
+}
+
+
+@media only screen and ( max-width:640px){
+    .bannerImg{
+        height:300px;
+        position:absolute;
+        top:40vh;
+        margin-left:10vw;
+    }
+    .textBlock{
+        position:absolute;
+        top:15vh;
+        /* margin:auto; */
+        margin-left:15%;
+        font-size:25px;
+    }
 }
