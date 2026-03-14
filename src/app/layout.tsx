@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   description: 'Senior Backend Engineer specializing in distributed systems, PostgreSQL optimization, and scalable architecture. Building robust backend solutions and developer tools.',
   keywords: ['Backend Engineer', 'PostgreSQL', 'Distributed Systems', 'Node.js', 'Python', 'System Design'],
   authors: [{ name: 'Bikram Gyawali' }],
+  icons: {
+    icon: '/icon.svg',
+  },
   openGraph: {
     title: 'Bikram Gyawali - Senior Backend Engineer',
     description: 'Senior Backend Engineer specializing in distributed systems and scalable architecture',
