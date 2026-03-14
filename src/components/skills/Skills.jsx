@@ -49,11 +49,11 @@ function Skills() {
               let ind = index + 1;
               return (
                 <div
-                  class="p-2 sm:w-1/2 w-full"
+                  class="p-1 sm:w-1/2 w-full"
                   data-aos={`${ind % 2 === 0 ? "fade-left" : "fade-right"}`}
                 >
-                  <div class="bg-gray-100 rounded flex p-4 h-full items-center">
-                    <img src={`${skill.img}`} className="w-10 mr-4" alt="" />
+                  <div class="bg-gray-100 rounded flex p-2 h-full items-center">
+                    <img src={`${skill.img}`} className="h-20 mr-4 " alt="" />
                     <span class="title-font font-medium">{skill.name}</span>
                   </div>
                 </div>

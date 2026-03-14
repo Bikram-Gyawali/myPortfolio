@@ -1,33 +1,202 @@
 {
   "skills": [
     {
-      "name": "Javascript",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png"
+      "name": "JavaScript",
+      "img": "https://cdn.simpleicons.org/javascript",
+      "level": "expert",
+      "category": "backend"
     },
     {
-      "name": "ReactJs",
-      "img": "https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png"
+      "name": "TypeScript",
+      "img": "https://cdn.simpleicons.org/typescript",
+      "level": "expert",
+      "category": "backend"
     },
     {
-      "name": "NodeJS",
-      "img": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_f0b606abb6d19089febc9faeeba5bc05/nodejs-development-services.png"
-    },
-
-    {
-      "name": "MongoDB",
-      "img": "https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png"
+      "name": "Node.js",
+      "img": "https://cdn.simpleicons.org/nodedotjs",
+      "level": "expert",
+      "category": "backend"
     },
     {
-      "name": "Git",
-      "img": "https://e7.pngegg.com/pngimages/713/558/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png"
-    },
-    {
-      "name": "ExpressJS",
-      "img": "https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png"
+      "name": "Golang",
+      "img": "https://cdn.simpleicons.org/go",
+      "level": "advanced",
+      "category": "backend"
     },
     {
       "name": "Python",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png"
+      "img": "https://cdn.simpleicons.org/python",
+      "level": "advanced",
+      "category": "backend"
+    },
+    {
+      "name": "ReactJs",
+      "img": "https://cdn.simpleicons.org/react",
+      "level": "advanced",
+      "category": "frontend"
+    },
+    {
+      "name": "PostgreSQL",
+      "img": "https://cdn.simpleicons.org/postgresql",
+      "level": "expert",
+      "category": "database"
+    },
+    {
+      "name": "MongoDB",
+      "img": "https://cdn.simpleicons.org/mongodb",
+      "level": "advanced",
+      "category": "database"
+    },
+    {
+      "name": "DynamoDB",
+      "img": "https://cdn.simpleicons.org/amazondynamodb",
+      "level": "intermediate",
+      "category": "database"
+    },
+    {
+      "name": "Redis",
+      "img": "https://cdn.simpleicons.org/redis",
+      "level": "advanced",
+      "category": "database"
+    },
+    {
+      "name": "Elasticsearch",
+      "img": "https://cdn.simpleicons.org/elasticsearch",
+      "level": "intermediate",
+      "category": "database"
+    },
+    {
+      "name": "AWS",
+      "img": "https://en.wikipedia.org/wiki/Amazon_Web_Services",
+      "level": "advanced",
+      "category": "devops"
+    },
+    {
+      "name": "Amplify",
+      "img": "https://cdn.simpleicons.org/awsamplify",
+      "level": "intermediate",
+      "category": "devops"
+    },
+    {
+      "name": "Docker",
+      "img": "https://cdn.simpleicons.org/docker",
+      "level": "advanced",
+      "category": "devops"
+    },
+    {
+      "name": "CI/CD",
+      "img": null,
+      "level": "advanced",
+      "category": "devops"
+    },
+    {
+      "name": "GitHub Actions",
+      "img": "https://cdn.simpleicons.org/githubactions",
+      "level": "advanced",
+      "category": "devops"
+    },
+    {
+      "name": "Prometheus",
+      "img": "https://cdn.simpleicons.org/prometheus",
+      "level": "intermediate",
+      "category": "devops"
+    },
+    {
+      "name": "Grafana",
+      "img": "https://cdn.simpleicons.org/grafana",
+      "level": "intermediate",
+      "category": "devops"
+    },
+    {
+      "name": "Git",
+      "img": "https://cdn.simpleicons.org/git",
+      "level": "expert",
+      "category": "tools"
+    },
+    {
+      "name": "GraphQL",
+      "img": "https://cdn.simpleicons.org/graphql",
+      "level": "advanced",
+      "category": "backend"
+    },
+    {
+      "name": "WebSocket",
+      "img": null,
+      "level": "advanced",
+      "category": "backend"
+    },
+    {
+      "name": "Socket.io",
+      "img": "https://cdn.simpleicons.org/socketdotio",
+      "level": "advanced",
+      "category": "backend"
+    },
+    {
+      "name": "Koa",
+      "img": "https://cdn.simpleicons.org/koa",
+      "level": "advanced",
+      "category": "backend"
+    },
+    {
+      "name": "Fastify",
+      "img": "https://cdn.simpleicons.org/fastify",
+      "level": "advanced",
+      "category": "backend"
+    },
+    {
+      "name": "Strapi",
+      "img": "https://cdn.simpleicons.org/strapi",
+      "level": "intermediate",
+      "category": "backend"
+    },
+    {
+      "name": "Firebase",
+      "img": "https://cdn.simpleicons.org/firebase",
+      "level": "intermediate",
+      "category": "backend"
+    },
+    {
+      "name": "RabbitMQ",
+      "img": "https://cdn.simpleicons.org/rabbitmq",
+      "level": "intermediate",
+      "category": "backend"
+    },
+    {
+      "name": "Stripe",
+      "img": "https://cdn.simpleicons.org/stripe",
+      "level": "intermediate",
+      "category": "tools"
+    },
+    {
+      "name": "N8N",
+      "img": "https://cdn.simpleicons.org/n8n",
+      "level": "intermediate",
+      "category": "tools"
+    },
+    {
+      "name": "Inngest",
+      "img": "https://cdn.simpleicons.org/inngest",
+      "level": "intermediate",
+      "category": "tools"
+    },
+    {
+      "name": "FFmpeg",
+      "img": "https://cdn.simpleicons.org/ffmpeg",
+      "level": "intermediate",
+      "category": "tools"
+    },
+    {
+      "name": "NGINX",
+      "img": "https://cdn.simpleicons.org/nginx",
+      "level": "advanced",
+      "category": "devops"
+    },
+    {
+      "name": "OOP",
+      "img": null,
+      "level": "expert",
+      "category": "backend"
     }
   ]
 }

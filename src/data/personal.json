@@ -1,0 +1,51 @@
+{
+  "name": "Bikram Gyawali",
+  "title": "Software Engineer",
+  "bio": "I love architecting complex systems and creating developer tools that improve engineering productivity. Experienced in building scalable backend services and optimizing database performance.",
+  "email": "bikramgyawali57@gmail.com",
+  "phone": "+977-9867321212",
+  "location": "Baneshwor, Kathmandu, Nepal",
+  "github": "https://github.com/Bikram-Gyawali",
+  "linkedin": "https://www.linkedin.com/in/bikram-gyawali369/",
+  "medium": "https://medium.com/@vikramgyawali57",
+  "resume": "/resume.pdf",
+  "avatar": "/avatar.jpg",
+  "highlights": [
+    "5+ years of experience in backend development",
+    "Built scalable systems handling high traffic",
+    "Released developer toolkit web extension (Rebash.dev)"
+  ],
+  "softSkills": [
+    "Communication",
+    "Cultural Adaptability", 
+    "Mentoring",
+    "Agile Familiarity",
+    "Teamwork",
+    "Creativity"
+  ],
+  "languages": [
+    "English",
+    "Nepali", 
+    "Hindi"
+  ],
+  "interests": [
+    "Chess",
+    "solving Rubix Cubes",
+    "magic",
+    "Riddles"
+  ],
+  "education": [
+    {
+      "degree": "BSc.CSIT",
+      "institution": "Tribhuvan University",
+      "location": "Kathmandu, Nepal",
+      "period": "2019-2023"
+    },
+    {
+      "degree": "+2 / SEE",
+      "institution": "Kanti Secondary School",
+      "location": "Butwal, Rupandehi",
+      "period": "2014-2019"
+    }
+  ]
+}

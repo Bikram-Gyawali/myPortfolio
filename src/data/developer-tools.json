@@ -1,0 +1,84 @@
+{
+  "tools": [
+    {
+      "id": "json-formatter",
+      "name": "JSON Formatter",
+      "description": "Format and validate JSON with syntax highlighting and error detection",
+      "category": "formatter",
+      "component": "JsonFormatter",
+      "icon": "Braces"
+    },
+    {
+      "id": "jwt-decoder",
+      "name": "JWT Decoder",
+      "description": "Decode and verify JSON Web Tokens with header and payload analysis",
+      "category": "analyzer",
+      "component": "JwtDecoder",
+      "icon": "Key"
+    },
+    {
+      "id": "base64-encoder",
+      "name": "Base64 Encoder/Decoder",
+      "description": "Encode and decode Base64 strings with support for different character sets",
+      "category": "converter",
+      "component": "Base64Converter",
+      "icon": "ArrowUpDown"
+    },
+    {
+      "id": "ip-lookup",
+      "name": "IP Lookup",
+      "description": "Get detailed information about IP addresses including location and ISP",
+      "category": "analyzer",
+      "component": "IpLookup",
+      "icon": "Globe"
+    },
+    {
+      "id": "http-tester",
+      "name": "HTTP Request Tester",
+      "description": "Test HTTP requests with different methods, headers, and body content",
+      "category": "tester",
+      "component": "HttpTester",
+      "icon": "Send"
+    },
+    {
+      "id": "regex-tester",
+      "name": "Regex Tester",
+      "description": "Test and debug regular expressions with real-time matching and explanation",
+      "category": "tester",
+      "component": "RegexTester",
+      "icon": "Search"
+    },
+    {
+      "id": "markdown-previewer",
+      "name": "Markdown Previewer",
+      "description": "Preview Markdown with syntax highlighting and live updates",
+      "category": "formatter",
+      "component": "MarkdownPreviewer",
+      "icon": "FileText"
+    },
+    {
+      "id": "url-encoder",
+      "name": "URL Encoder/Decoder",
+      "description": "Encode and decode URLs with proper escaping and character handling",
+      "category": "converter",
+      "component": "UrlEncoder",
+      "icon": "Link"
+    },
+    {
+      "id": "hash-generator",
+      "name": "Hash Generator",
+      "description": "Generate various hash types (MD5, SHA1, SHA256) for text input",
+      "category": "converter",
+      "component": "HashGenerator",
+      "icon": "Hash"
+    },
+    {
+      "id": "timestamp-converter",
+      "name": "Timestamp Converter",
+      "description": "Convert between Unix timestamps and human-readable dates",
+      "category": "converter",
+      "component": "TimestampConverter",
+      "icon": "Clock"
+    }
+  ]
+}
