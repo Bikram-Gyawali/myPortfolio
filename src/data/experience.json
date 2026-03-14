@@ -1,0 +1,164 @@
+{
+  "experience": [
+    {
+      "id": 1,
+      "company": "Niural",
+      "position": "Software Engineer | Python",
+      "period": "2025 - Present",
+      "location": "Remote",
+      "description": "Working on refactoring lambda functions for optimization and efficient development experience. Integration for data sync to different platforms like Quickbooks. Migration for existing database structure to follow best principles according to DynamoDB design.",
+      "achievements": [
+        "Integrated data synchronization across multiple accounting and ATS platforms",
+        "Created CLI tools to optimize developer workflows"
+      ],
+      "technologies": ["Python", "AWS Lambda", "DynamoDB", "Quickbooks API", "CLI Development"]
+    },
+    {
+      "id": 2,
+      "company": "Edit Enterprises",
+      "position": "Mid Backend Developer | Golang",
+      "period": "2024 - 2025",
+      "location": "Remote",
+      "description": "Developed backend services with Golang from scratch. Involved in database schema design, normalization among tables, and query optimization. Implemented WebSocket for communication and payment/subscription functionality.",
+      "achievements": [
+        "Designed scalable database schema and project architecture",
+        "Maintained CI/CD pipelines with Docker and Docker Hub",
+        "Optimized API performance reducing latency from 15 seconds to 400ms",
+        "Implemented rate limiting for API security",
+        "Managed Docker networks for container communication"
+      ],
+      "technologies": ["Golang", "PostgreSQL", "WebSocket", "Docker", "CI/CD", "Docker Hub", "NGINX", "Payment Systems", "Rate Limiting"]
+    },
+    {
+      "id": 3,
+      "company": "Virtual Gravity",
+      "position": "Junior Full Stack Developer (Backend)",
+      "period": "2021 - 2024",
+      "location": "Remote",
+      "description": "Worked on LIF3-Tracker (Organizational Crypto and Exchange Tracking System). Implemented RBAC system, cross-device accessibility, Firebase notifications, Stripe subscriptions, and database triggers.",
+      "achievements": [
+        "Implemented Role-Based Access Control (RBAC) system",
+        "Optimized code using promises and async functions",
+        "Implemented Firebase notification system",
+        "Integrated Stripe subscription system for SAAS project",
+        "Implemented multi-role login and registration system",
+        "Dockerized system for enhanced portability"
+      ],
+      "technologies": ["Node.js", "MongoDB", "Firebase", "Stripe", "React", "RBAC", "OAuth 2.0", "CDC", "Observer Pattern", "Docker"]
+    }
+  ],
+  "freelance": [
+    {
+      "id": 4,
+      "company": "ANIVOR",
+      "position": "Restaurant POS Developer",
+      "period": "2020 - 2021",
+      "location": "Remote",
+      "description": "Led development team for Restaurant POS system. Implemented data analytics, real-time communication, QR code functionality, and invoice generation.",
+      "achievements": [
+        "Led development team throughout software development process",
+        "Implemented data analytics and reporting",
+        "Integrated Prometheus and Grafana for server monitoring",
+        "Implemented Socket.io for real-time communication",
+        "Created QR code functionality for efficient orders",
+        "Managed DigitalOcean droplets and CI/CD pipeline"
+      ],
+      "technologies": ["Socket.io", "Prometheus", "Grafana", "DigitalOcean", "Docker", "NGINX", "GitHub Actions", "QR Code Generation", "Email/WhatsApp Integration"]
+    },
+    {
+      "id": 5,
+      "company": "GlobalDiary",
+      "position": "Social Media Backend Developer",
+      "period": "2024 - 2025",
+      "location": "Remote",
+      "description": "Set up KAFKA for scalable service communication for log storage. Applied Elasticsearch for professional log analytics and visualization of storage.",
+      "achievements": [
+        "Engineered parallel data processing with KAFKA",
+        "Applied Elasticsearch for log analytics and visualization",
+        "Implemented hot and cold storage using Elasticsearch and S3",
+        "Designed scalable service communication architecture"
+      ],
+      "technologies": ["KAFKA", "Elasticsearch", "S3", "Log Analytics", "Parallel Processing", "Data Storage"]
+    }
+  ],
+  "personalProjects": [
+    {
+      "id": 6,
+      "title": "Hospital Management System",
+      "company": "Hackathon Project",
+      "period": "2020",
+      "description": "MERN stack hospital management system with staff, beds, status, services, events, vacancies, analytics and online booking.",
+      "achievements": [
+        "Designed and implemented comprehensive hospital management features",
+        "Created appointment system with token generation",
+        "Built analytics dashboard for hospital operations"
+      ],
+      "technologies": ["MongoDB", "Express.js", "React", "Node.js", "JWT", "Analytics"],
+      "demoUrl": "https://www.youtube.com/watch?v=WP749Qv4AmI&t=1s"
+    },
+    {
+      "id": 7,
+      "title": "Applicant Tracking System (ATS)",
+      "company": "RosAI",
+      "period": "2020",
+      "description": "Final year project implementing TF-IDF and similarity search algorithm to find similarity scores between job descriptions and applicant resumes/CVs.",
+      "achievements": [
+        "Implemented TF-IDF and similarity search algorithm",
+        "Applied GeoHash algorithm for location-based job sorting",
+        "Built resume/CV parsing and scoring system"
+      ],
+      "technologies": ["Python", "TF-IDF", "Similarity Algorithms", "GeoHash", "NLP", "Resume Parsing"]
+    },
+    {
+      "id": 8,
+      "title": "Video Processing System",
+      "company": "Personal Project",
+      "period": "2020",
+      "description": "Video content recognition, subtitle generation, and embedding system using FFmpeg for automatic subtitle highlighting.",
+      "achievements": [
+        "Recognized video content and generated subtitles automatically",
+        "Embedded subtitles with word highlighting",
+        "Used FFmpeg for video processing"
+      ],
+      "technologies": ["FFmpeg", "Video Processing", "NLP", "Subtitle Generation", "Content Recognition"]
+    },
+    {
+      "id": 9,
+      "title": "Documentation Automation",
+      "company": "Personal Tool",
+      "period": "2020",
+      "description": "Created documentation automation for Express applications to avoid manual Swagger JSON updates.",
+      "achievements": [
+        "Automated Swagger documentation generation",
+        "Reduced documentation maintenance time significantly"
+      ],
+      "technologies": ["Express.js", "Swagger", "Documentation", "Automation"]
+    },
+    {
+      "id": 10,
+      "title": "N8N Automation",
+      "company": "Personal Tool",
+      "period": "2020",
+      "description": "Created daily team standup message builder based on GitHub interaction and bulk updates to Slack.",
+      "achievements": [
+        "Built GitHub integration for standup generation",
+        "Created Slack integration for team updates",
+        "Automated daily reporting workflows"
+      ],
+      "technologies": ["N8N", "GitHub API", "Slack API", "Automation", "Workflow"]
+    },
+    {
+      "id": 11,
+      "title": "PR Review AI Agent",
+      "company": "Personal Tool",
+      "period": "2020",
+      "description": "Created AI agent that comments on code changes with better suggestions compared to original changes.",
+      "achievements": [
+        "Built AI-powered code review system",
+        "Implemented comparison algorithms for code suggestions",
+        "Integrated with GitHub pull request workflow"
+      ],
+      "technologies": ["AI/ML", "GitHub API", "Code Analysis", "Natural Language Processing"]
+    }
+  ]
+}

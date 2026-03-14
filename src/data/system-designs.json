@@ -1,0 +1,193 @@
+{
+  "systemDesigns": [
+    {
+      "id": "url-shortener",
+      "title": "Design a URL Shortener",
+      "description": "Design a scalable URL shortening service like bit.ly that handles millions of URLs and redirects",
+      "category": "Web Services",
+      "architecture": {
+        "diagram": "/diagrams/url-shortener.svg",
+        "components": [
+          "Load Balancer",
+          "API Gateway",
+          "URL Service",
+          "Cache Layer (Redis)",
+          "Database (PostgreSQL)",
+          "Analytics Service"
+        ],
+        "dataFlow": [
+          "User requests short URL",
+          "Check cache first",
+          "If miss, query database",
+          "Update cache and redirect",
+          "Log analytics data"
+        ]
+      },
+      "scaling": {
+        "strategy": "Horizontal scaling with read replicas and caching",
+        "bottlenecks": [
+          "Database write operations",
+          "Cache invalidation",
+          "Analytics processing"
+        ],
+        "solutions": [
+          "Database sharding by hash",
+          "Write-through cache pattern",
+          "Async analytics processing"
+        ]
+      },
+      "database": {
+        "schema": "urls(id, short_code, long_url, created_at, expires_at, click_count)",
+        "indexing": ["short_code", "created_at", "click_count"],
+        "caching": ["Redis for hot URLs", "LRU eviction", "TTL-based expiration"]
+      },
+      "tradeoffs": {
+        "Length vs Collision": "Shorter codes increase collision probability",
+        "Cache vs Consistency": "Aggressive caching improves speed but may show stale data",
+        "Sync vs Async Analytics": "Sync analytics ensure accuracy but impact latency"
+      }
+    },
+    {
+      "id": "real-time-chat",
+      "title": "Design a Real-time Chat System",
+      "description": "Design a scalable real-time chat application supporting millions of concurrent users",
+      "category": "Real-time Systems",
+      "architecture": {
+        "diagram": "/diagrams/real-time-chat.svg",
+        "components": [
+          "WebSocket Gateway",
+          "Chat Service",
+          "Message Queue",
+          "Presence Service",
+          "Database Cluster",
+          "CDN for media"
+        ],
+        "dataFlow": [
+          "Client connects via WebSocket",
+          "Message sent to chat service",
+          "Queued for delivery",
+          "Broadcast to recipients",
+          "Persist to database"
+        ]
+      },
+      "scaling": {
+        "strategy": "Microservices with pub/sub and connection pooling",
+        "bottlenecks": [
+          "WebSocket connections",
+          "Message delivery guarantees",
+          "Presence updates"
+        ],
+        "solutions": [
+          "Connection pooling and load balancing",
+          "At-least-once delivery with acknowledgments",
+          "Optimistic presence updates"
+        ]
+      },
+      "database": {
+        "schema": "users(id, username, status), rooms(id, name, type), messages(id, room_id, sender_id, content, timestamp)",
+        "indexing": ["room_id, timestamp", "sender_id, timestamp"],
+        "caching": ["Recent messages in Redis", "User presence data", "Room metadata"]
+      },
+      "tradeoffs": {
+        "Consistency vs Availability": "Eventually consistent for better availability",
+        "Ordering vs Performance": "Per-room ordering adds complexity",
+        "Storage vs Retrieval": "Message history vs quick access"
+      }
+    },
+    {
+      "id": "code-execution",
+      "title": "Design a Code Execution Engine",
+      "description": "Design a secure system for executing untrusted code in isolation",
+      "category": "Developer Tools",
+      "architecture": {
+        "diagram": "/diagrams/code-execution.svg",
+        "components": [
+          "API Gateway",
+          "Job Queue",
+          "Worker Pool",
+          "Container Runtime",
+          "Result Store",
+          "Monitoring Service"
+        ],
+        "dataFlow": [
+          "Submit code execution request",
+          "Queue the job",
+          "Assign to worker container",
+          "Execute with resource limits",
+          "Return results and cleanup"
+        ]
+      },
+      "scaling": {
+        "strategy": "Horizontal scaling with container orchestration",
+        "bottlenecks": [
+          "Container startup time",
+          "Resource contention",
+          "Security isolation overhead"
+        ],
+        "solutions": [
+          "Warm container pools",
+          "Resource quotas and limits",
+          "Lightweight virtualization"
+        ]
+      },
+      "database": {
+        "schema": "executions(id, code, language, input, output, status, created_at)",
+        "indexing": ["created_at", "status", "language"],
+        "caching": ["Recent execution results", "Language configurations"]
+      },
+      "tradeoffs": {
+        "Security vs Performance": "Stronger isolation adds overhead",
+        "Freshness vs Cost": "Fresh containers vs warm pools",
+        "Features vs Complexity": "Language support vs maintenance"
+      }
+    },
+    {
+      "id": "ats-platform",
+      "title": "Design an ATS Platform",
+      "description": "Design a scalable Applicant Tracking System for enterprise recruitment",
+      "category": "Business Systems",
+      "architecture": {
+        "diagram": "/diagrams/ats-platform.svg",
+        "components": [
+          "API Gateway",
+          "User Service",
+          "Job Service",
+          "Application Service",
+          "AI Matching Service",
+          "Notification Service",
+          "Analytics Service"
+        ],
+        "dataFlow": [
+          "Candidate applies for job",
+          "Application processed and indexed",
+          "AI matching analyzes fit",
+          "Recruiters review matches",
+          "Status updates and notifications"
+        ]
+      },
+      "scaling": {
+        "strategy": "Microservices with event-driven architecture",
+        "bottlenecks": [
+          "Resume processing",
+          "AI matching computation",
+          "Database query complexity"
+        ],
+        "solutions": [
+          "Async resume processing",
+          "Distributed AI inference",
+          "Read replicas and caching"
+        ]
+      },
+      "database": {
+        "schema": "users, jobs, applications, resumes, interviews, feedback",
+        "indexing": ["job_status", "application_status", "skills_match"],
+        "caching": ["Job listings", "User sessions", "Search results"]
+      },
+      "tradeoffs": {
+        "Real-time vs Batch": "Immediate matching vs batch processing",
+        "AI Accuracy vs Cost": "Complex models vs inference cost",
+        "Features vs Usability": "Rich functionality vs simplicity"
+      }
+    }
+  ]
+}

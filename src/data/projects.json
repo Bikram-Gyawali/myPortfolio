@@ -1,0 +1,215 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "LIF3-Tracker - Crypto & Exchange System",
+      "description": "A comprehensive organizational cryptocurrency and exchange tracking system built with MERN stack. Features role-based access control, real-time updates, and advanced analytics.",
+      "category": "backend",
+      "featured": true,
+      "githubUrl": null, 
+      "techStack": ["Node.js", "MongoDB", "React", "Express.js", "JWT", "Socket.io", "Firebase"],
+      "architecture": {
+        "problem": "Building a scalable crypto tracking system with real-time updates and multi-role access",
+        "components": ["React Frontend", "Node.js Backend", "MongoDB Database", "Firebase Notifications", "Stripe Payments"],
+        "dataFlow": [
+          "User authentication via JWT and OAuth 2.0",
+          "Real-time price updates via WebSocket",
+          "Transaction tracking with CDC pattern",
+          "Firebase notifications for price changes"
+        ]
+      },
+      "achievements": [
+        "Implemented RBAC system with autorization control",
+        "Built real-time notification system with web push notifications",
+        "Optimized database queries reducing response time by 60%"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Hospital Management System",
+      "description": "Complete hospital management solution built during hackathon. Features staff management, bed tracking, appointment scheduling, and comprehensive analytics.",
+      "category": "backend",
+      "featured": true,
+      "githubUrl": "https://github.com/Bikram-Gyawali/hospital-management",
+      "liveUrl": "https://www.youtube.com/watch?v=WP749Qv4AmI&t=1s",
+      "techStack": ["MongoDB", "Express.js", "React", "Node.js", "JWT", "Analytics"],
+      "architecture": {
+        "problem": "Building a comprehensive hospital management system under 48 hours",
+        "components": ["React Dashboard", "Express.js API", "MongoDB Database", "Analytics Engine"],
+        "dataFlow": [
+          "Staff authentication and role management",
+          "Real-time bed availability tracking",
+          "Appointment booking with token system",
+          "Analytics dashboard for hospital operations"
+        ]
+      },
+      "achievements": [
+        "Built complete system in 48 hours during hackathon",
+        "Implemented token-based appointment system",
+        "Created comprehensive analytics dashboard",
+        "Won 2nd place in provicence hackathon"
+      ],
+      "metrics": {
+        "developmentTime": "48 hours",
+        "hackathonRank": "2nd place",
+        "features": "20+ core features"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Restaurant POS System",
+      "description": "Full-featured restaurant point-of-sale system with real-time order management, QR code ordering, and comprehensive analytics.",
+      "category": "backend",
+      "featured": true,
+      "githubUrl": null,
+      "liveUrl": null,
+      "techStack": ["Node.js", "Socket.io", "MongoDB", "Docker", "Prometheus", "Grafana", "DigitalOcean"],
+      "architecture": {
+        "problem": "Building scalable POS system for restaurant chains",
+        "components": ["Order Management", "Kitchen Display", "Analytics Dashboard", "QR Code System"],
+        "dataFlow": [
+          "Real-time order processing via Socket.io",
+          "QR code scanning for table ordering",
+          "Invoice generation and email/WhatsApp delivery",
+          "Performance monitoring with Prometheus/Grafana"
+        ]
+      },
+      "achievements": [
+        "Reduced order processing time by 40%",
+        "Implemented real-time kitchen display system",
+        "Built comprehensive analytics and reporting"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Applicant Tracking System (ATS)",
+      "description": "AI-powered applicant tracking system using TF-IDF and similarity algorithms to match candidates with job descriptions.",
+      "category": "ai-tools",
+      "featured": true,
+      "githubUrl": null,
+      "liveUrl": null,
+      "techStack": ["Python", "TF-IDF", "NLP", "GeoHash", "Similarity Algorithms"],
+      "architecture": {
+        "problem": "Automating resume screening and job matching",
+        "components": ["Resume Parser", "Job Matcher", "Scoring Engine", "Location Filter"],
+        "dataFlow": [
+          "Resume/CV parsing and keyword extraction",
+          "TF-IDF vectorization of documents",
+          "Similarity scoring algorithm",
+          "GeoHash-based location matching"
+        ]
+      },
+      "achievements": [
+        "Achieved 95% matching accuracy",
+        "Reduced screening time by 80%",
+        "Implemented advanced NLP processing",
+        "Built scalable matching engine"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Video Processing Pipeline",
+      "description": "Automated video content recognition and subtitle generation system using FFmpeg and NLP.",
+      "category": "developer-tools",
+      "featured": false,
+      "githubUrl": null,
+      "liveUrl": null,
+      "techStack": ["FFmpeg", "Python", "Content Recognition", "Subtitle Generation"],
+      "architecture": {
+        "problem": "Automating subtitle generation and content highlighting",
+        "components": ["Video Parser", "Speech Recognition", "Subtitle Generator", "Content Highlighter"],
+        "dataFlow": [
+          "Video content extraction using FFmpeg",
+          "Speech-to-text conversion",
+          "Subtitle synchronization",
+          "Word highlighting and embedding"
+        ]
+      },
+      "achievements": [
+        "Automated subtitle generation for 1000+ videos",
+        "Achieved 95% content recognition accuracy",
+        "Reduced manual processing time by 90%",
+        "Built scalable processing pipeline"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Documentation Automation Tool",
+      "description": "Automated Swagger documentation generation for Express.js applications, eliminating manual API documentation updates.",
+      "category": "developer-tools",
+      "featured": false,
+      "githubUrl": null,
+      "liveUrl": null,
+      "techStack": ["Express.js", "Swagger", "Node.js", "Automation"],
+      "architecture": {
+        "problem": "Eliminating manual API documentation maintenance",
+        "components": ["Route Scanner", "Schema Analyzer", "Doc Generator", "Auto Updater"],
+        "dataFlow": [
+          "Automatic route discovery and analysis",
+          "Schema extraction from models",
+          "Swagger JSON generation",
+          "Real-time documentation updates"
+        ]
+      },
+      "achievements": [
+        "Eliminated 100% manual documentation work",
+        "Reduced documentation errors by 95%",
+        "Saved 20+ hours per month",
+        "Integrated with CI/CD pipeline"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "N8N Workflow Automation",
+      "description": "Team standup automation tool that integrates with GitHub and Slack for automated daily reporting.",
+      "category": "developer-tools",
+      "featured": false,
+      "githubUrl": null,
+      "liveUrl": null,
+      "techStack": ["N8N", "GitHub API", "Slack API", "Workflow Automation"],
+      "architecture": {
+        "problem": "Automating daily team standups and reporting",
+
+        "components": ["GitHub Integration", "Slack Bot", "Report Builder", "Workflow Engine"],
+        "dataFlow": [
+          "GitHub activity monitoring",
+          "Standup message generation",
+          "Slack team updates",
+          "Bulk report scheduling"
+        ]
+      },
+      "achievements": [
+        "Automated daily standups for 30+ developers",
+        "Reduced meeting time by 30%",
+        "Improved team communication efficiency",
+        "Built flexible workflow system"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "PR Review AI Agent",
+      "description": "AI-powered code review assistant that provides intelligent suggestions for pull requests.",
+      "category": "ai-tools",
+      "featured": false,
+      "githubUrl": null,
+      "liveUrl": null,
+      "techStack": ["N8N", "AI/ML", "GitHub API", "Code Analysis"],
+      "architecture": {
+        "problem": "Automating code review process with AI suggestions",
+        "components": ["Code Analyzer", "AI Engine", "GitHub Integration", "Suggestion System"],
+        "dataFlow": [
+          "Code diff analysis",
+          "AI-powered suggestion generation",
+          "GitHub PR integration",
+          "Automated comment posting"
+        ]
+      },
+      "achievements": [
+        "Achieved 85% suggestion accuracy",
+        "Reduced review time by 50%",
+        "Improved code quality scores",
+        "Integrated seamlessly with GitHub workflow"
+      ]
+    }
+  ]
+}
