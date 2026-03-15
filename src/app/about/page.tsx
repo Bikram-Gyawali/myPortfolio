@@ -140,14 +140,6 @@ export default function AboutPage() {
                     <span>Projects:</span>
                     <span className="font-medium">20+ Completed</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span>Open Source:</span>
-                    <span className="font-medium">500+ Stars</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Blog Readers:</span>
-                    <span className="font-medium">10K+</span>
-                  </div>
                 </div>
               </div>
             </CardContent>
