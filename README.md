@@ -110,14 +110,8 @@ src/
 - SEO optimized blog pages
 - Medium integration for cross-posting
 
-### 4. **System Design Section**
-- Interactive system design explanations
-- Architecture diagrams and components
-- Scaling strategies and tradeoffs
-- Database schema and caching strategies
-- Real-world examples (URL shortener, chat systems, etc.)
 
-### 5. **Developer Tools**
+### 4. **Developer Tools**
 - JSON formatter and validator
 - JWT decoder
 - Base64 encoder/decoder
