@@ -7,47 +7,47 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 145 50% 10%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 145 50% 10%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --popover-foreground: 145 50% 10%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 145 40% 96%;
+    --secondary-foreground: 142 76% 36%;
+    --muted: 145 40% 96%;
+    --muted-foreground: 145 20% 47%;
+    --accent: 45 93% 47%;
+    --accent-foreground: 145 50% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 145 32% 91%;
+    --input: 145 32% 91%;
+    --ring: 142 76% 36%;
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --background: 145 80% 5%;
+    --foreground: 145 40% 98%;
+    --card: 145 80% 8%;
+    --card-foreground: 145 40% 98%;
+    --popover: 145 80% 8%;
+    --popover-foreground: 145 40% 98%;
+    --primary: 142 70% 45%;
+    --primary-foreground: 145 90% 10%;
+    --secondary: 145 30% 17%;
+    --secondary-foreground: 145 40% 98%;
+    --muted: 145 30% 17%;
+    --muted-foreground: 145 20% 65%;
+    --accent: 45 93% 37%;
+    --accent-foreground: 145 40% 98%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 145 40% 98%;
+    --border: 145 30% 17%;
+    --input: 145 30% 17%;
+    --ring: 142 70% 45%;
   }
 }
 
@@ -66,18 +66,55 @@
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-green-400 via-green-500 to-green-600 bg-clip-text text-transparent;
   }
   
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:scale-105;
+    @apply transition-all duration-300 hover:shadow-lg hover:scale-105 hover:shadow-green-500/20;
   }
   
   .terminal {
-    @apply bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm;
+    @apply bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm border border-green-800/30;
   }
   
   .glass-effect {
-    @apply bg-white/10 backdrop-blur-md border border-white/20;
+    @apply bg-white/10 backdrop-blur-md border border-green-500/20;
+  }
+  
+  .loki-glow {
+    @apply shadow-lg shadow-green-500/50;
+  }
+  
+  .marvel-card {
+    @apply relative overflow-hidden bg-gradient-to-br from-green-900/20 to-green-800/10 border border-green-700/30 backdrop-blur-sm;
+  }
+  
+  .marvel-card::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-tr from-transparent via-green-400/10 to-transparent opacity-0 transition-opacity duration-500;
+  }
+  
+  .marvel-card:hover::before {
+    @apply opacity-100;
+  }
+  
+  .cosmic-border {
+    @apply relative border border-green-600/30;
+  }
+  
+  .cosmic-border::before {
+    content: '';
+    @apply absolute inset-0 rounded-lg bg-gradient-to-r from-green-400 via-green-500 to-green-600 p-[1px] -z-10;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask-composite: xor;
+  }
+  
+  .shimmer-text {
+    @apply bg-gradient-to-r from-green-200 via-green-400 to-green-200 bg-[length:1000px_100%] bg-clip-text text-transparent;
+  }
+  
+  .portal-effect {
+    @apply transition-all duration-300;
   }
 }
